@@ -22,4 +22,4 @@ EXPOSE 8282
 
 VOLUME /mnt/media/music /mnt/media/downloads
 
-CMD ["python", "/opt/headphones/Headphones.py", "-p", "8282", "--config", "/config/config.ini"]
+CMD ["python", "/opt/headphones/Headphones.py", "-p", "8282", "--datadir=/config"]
