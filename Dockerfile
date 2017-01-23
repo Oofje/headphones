@@ -1,6 +1,5 @@
 FROM ubuntu
 
-VOLUME /config/
 COPY firstrun.sh /tmp/firstrun.sh
 
 RUN apt-get update && \
@@ -20,6 +19,6 @@ RUN apt-get update && \
 
 EXPOSE 8282
 
-VOLUME /mnt/media/music /mnt/media/downloads
+VOLUME /mnt/media/music /mnt/media/downloads /config
 
 CMD ["python", "/opt/headphones/Headphones.py", "-p", "8282", "--datadir=/config"]
