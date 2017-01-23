@@ -1,7 +1,7 @@
 FROM ubuntu
 
-COPY firstrun.sh /tmp/firstrun.sh
 VOLUME /config/
+COPY firstrun.sh /tmp/firstrun.sh
 
 RUN apt-get update && \
     apt-get install -y \
