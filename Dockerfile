@@ -8,9 +8,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir /opt/headphones && \
     git clone https://github.com/rembo10/headphones.git /opt/headphones && \
-    apt-get remove -y \
-        git-core && \
-    apt-get autoremove -y && \
     apt-get clean -y
 
 EXPOSE 8282
