@@ -14,4 +14,4 @@ EXPOSE 8282
 
 VOLUME /mnt/media/music /mnt/media/downloads /config
 
-CMD ["python", "/opt/headphones/Headphones.py", "--host=0.0.0.0", "--port=8282", "--datadir=/mnt/config", "--nolaunch"]
+CMD ["python", "/opt/headphones/Headphones.py", "--host=0.0.0.0", "--port=8282", "--datadir=/mnt/config/headphones", "--nolaunch"]
